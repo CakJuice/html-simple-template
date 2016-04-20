@@ -36,6 +36,8 @@
 				<li><a href="about.html">About Us</a>
 				<li><a href="form.html">Form</a></li>
 				<li class="active"><a href="error404.html">Error</a></li>
+				<!-- Button trigger modal -->
+				<li><a href="#" data-toggle="modal" data-target="#myModal">Login</a></li>
 				<li class="dropdown">
 					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">Dropdown <span class="caret"></span></a>
 					<ul class="dropdown-menu">
@@ -74,6 +76,37 @@
 	</div>
 </footer>
 <!-- end of footer -->
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	<div class="modal-dialog" role="document" style="width: 360px">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				<h3 class="modal-title" id="myModalLabel">Login</h3>
+			</div>
+			<div class="modal-body">
+				<form method="POST">
+					<div class="form-group">
+						<label for="email">Email</label>
+						<input type="email" name="title" class="form-control" required>
+					</div>
+					<div class="form-group">
+						<label for="password">Password</label>
+						<input type="password" name="password" class="form-control" required>
+					</div>
+					<div class="checkbox">
+						<label>
+							<input type="checkbox"> Remember me
+						</label>
+					</div>
+					<button type="submit" class="btn btn-primary">Submit</button>
+				</form>
+				<p style="margin-top: 10px">Forgot your password? <a href="#">reset it!</a></p>
+			</div>
+		</div>
+	</div>
+</div>
 
 <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="assets/js/juice.js"></script>
