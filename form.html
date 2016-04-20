@@ -51,6 +51,7 @@
 				<li><a href="index.html">Home</a>
 				<li><a href="about.html">About Us</a>
 				<li class="active"><a href="form.html">Form</a></li>
+				<li><a href="error404.html">Error</a></li>
 				<li class="dropdown">
 					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">Dropdown <span class="caret"></span></a>
 					<ul class="dropdown-menu">
@@ -71,42 +72,54 @@
 
 <section class="content">
 	<div class="container">
-		<form method="POST" enctype="multipart/form-data">
-			<div class="form-group">
-				<label for="title">Title</label>
-				<input type="text" name="title" class="form-control">
-			</div>
-			<div class="form-group">
-				<label for="category">Category</label>
-				<select class="form-control" multiple="multiple" id="category" name="category">
-					<option value="1">Internet</option>
-					<option value="2">Computer</option>
-					<option value="3">Science</option>
-				</select>
-			</div>
-			<div class="form-group">
-				<label for="currency">Currency</label>
-				<input type="text" id="currency" name="currency" class="form-control text-right">
-			</div>
-			<div class="form-group">
-				<label for="datetime">Date Time</label>
-				<div id="datetimepicker" class="input-group">
-					<input data-format="dd/MM/yyyy hh:mm:ss" type="text" name="datetime" class="form-control">
-					<span class="add-on input-group-addon">
-						<i data-time-icon="fa fa-clock-o" data-date-icon="fa fa-calendar"></i>
-					</span>
+		<div class="alert alert-success alert-dismissible" role="alert">
+			<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+			<strong>Success!</strong>.
+		</div>
+
+		<div class="alert alert-danger alert-dismissible" role="alert">
+			<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+			<strong>Error!</strong> Please check your input form.
+		</div>
+
+		<div>
+			<form method="POST" enctype="multipart/form-data">
+				<div class="form-group">
+					<label for="title">Title</label>
+					<input type="text" name="title" class="form-control">
 				</div>
-			</div>
-			<div class="form-group">
-				<label for="upload">Upload Image</label>
-				<input name="upload" type="file" class="file file-loading form-control" data-allowed-file-extensions='["jpg", "jpeg", "png"]'>
-			</div>
-			<div class="form-group">
-				<label for="content">Content</label>
-				<textarea name="content" class="form-control" rows="10" id="tinymce"></textarea>
-			</div>
-			<button type="submit" class="btn btn-primary">Submit</button>
-		</form>
+				<div class="form-group">
+					<label for="category">Category</label>
+					<select class="form-control" multiple="multiple" id="category" name="category">
+						<option value="1">Internet</option>
+						<option value="2">Computer</option>
+						<option value="3">Science</option>
+					</select>
+				</div>
+				<div class="form-group">
+					<label for="currency">Currency</label>
+					<input type="text" id="currency" name="currency" class="form-control text-right">
+				</div>
+				<div class="form-group">
+					<label for="datetime">Date Time</label>
+					<div id="datetimepicker" class="input-group">
+						<input data-format="dd/MM/yyyy hh:mm:ss" type="text" name="datetime" class="form-control">
+						<span class="add-on input-group-addon">
+							<i data-time-icon="fa fa-clock-o" data-date-icon="fa fa-calendar"></i>
+						</span>
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="upload">Upload Image</label>
+					<input name="upload" type="file" class="file file-loading form-control" data-allowed-file-extensions='["jpg", "jpeg", "png"]'>
+				</div>
+				<div class="form-group">
+					<label for="content">Content</label>
+					<textarea name="content" class="form-control" rows="10" id="tinymce"></textarea>
+				</div>
+				<button type="submit" class="btn btn-primary">Submit</button>
+			</form>
+		</div>
 	</div>
 </section>
 
