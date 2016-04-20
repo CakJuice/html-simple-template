@@ -1,0 +1,106 @@
+body {
+	font-family: 'Open Sans', sans-serif;
+	overflow-x: hidden; 
+}
+
+.navbar-default .navbar-nav>li>a {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	font-size: 16px;
+}
+
+.navbar-brand {
+	margin-top: 10px;
+	font-size: 30px;
+}
+
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:focus,
+.navbar-default .navbar-nav>.active>a:hover {
+	background-color: transparent;
+	border-bottom: 3px solid #42a2ce;
+}
+
+.img-carousel {
+	width: 100%;
+}
+
+.content {
+	margin-top: 90px;
+}
+
+section {
+	padding-top: 10px;
+	padding-bottom: 25px;
+}
+
+.top-heading {
+	margin-top: 0;
+}
+
+.panel-heading>h3 {
+	margin-top: 10px;
+}
+
+.photo-gallery {
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.img-thumbnail:hover {
+	background-color: #286090;
+	border-color: #286090;
+}
+
+.team-name, .team-social {
+	margin-top: 10px;
+	color: #337ab7;
+	font-weight: bold;
+}
+
+.team-social {
+	margin-top: 0;
+	font-size: 32px;
+}
+
+footer {
+	background-color: #333;
+	color: #fff;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+#latest-photo, #our-team {
+	background-color: #42a2ce;
+	color: #fff;
+}
+
+.carousel-control .glyphicon-chevron-right,
+.carousel-control .icon-next {
+	right: 25%;
+}
+
+.carousel-control .glyphicon-chevron-left,
+.carousel-control .icon-prev {
+	left: 25%;
+}
+
+/* Responsive bootstrap custom */
+@media(max-width: 768px) {
+	.navbar-collapse {
+		margin-top: 10px;
+		background-color: #fff;
+	}
+
+	.navbar-toggle {
+		margin-top: 15px;
+	}
+
+	.navbar-default .navbar-nav>.active>a,
+	.navbar-default .navbar-nav>.active>a:focus,
+	.navbar-default .navbar-nav>.active>a:hover {
+		background-color: #42a2ce;
+		border: none;
+		color: #fff;
+	}
+}
