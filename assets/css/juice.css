@@ -1,3 +1,9 @@
+/*!
+ * juice.css
+ * Copyright CakJuice - 2016 (https://www.facebook.com/hendra.s.juice).
+ * Licensed sakkarepmu
+ */
+ 
 body {
 	font-family: 'Open Sans', sans-serif;
 	overflow-x: hidden; 
@@ -68,6 +74,7 @@ footer {
 	color: #fff;
 	padding-top: 10px;
 	padding-bottom: 10px;
+	width: 100%;
 }
 
 #latest-photo, #our-team {
