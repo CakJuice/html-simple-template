@@ -16,7 +16,6 @@ body {
 }
 
 .navbar-brand {
-	margin-top: 10px;
 	font-size: 30px;
 }
 
@@ -90,6 +89,11 @@ footer {
 .carousel-control .glyphicon-chevron-left,
 .carousel-control .icon-prev {
 	left: 25%;
+}
+
+.cj-brand {
+	font-size: 175%;
+	vertical-align: middle;
 }
 
 /* Responsive bootstrap custom */
